@@ -101,14 +101,15 @@ body {
         flex-direction: column;
     }
 
-    .myDiv{
-        display: block;
-                    margin: auto;
-        }
-
     .submit-container {
         display: flex;
         justify-content: center;
         margin: auto;
     }
+
+    .myDiv{
+        display: block;
+                    margin: auto;
+        }
 }
+
