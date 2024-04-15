@@ -85,6 +85,9 @@ li {
 }
 
 
+
+
+
   @media (max-width: 426px) {
     .message-container {
         display: flex;
@@ -119,3 +122,9 @@ li {
         justify-content: center;
     }
 }
+
+@media screen and (max-width: 600px) {
+    .upper {
+      grid-template-columns: 1fr; /* Single column for smaller screens */
+    }
+  }
