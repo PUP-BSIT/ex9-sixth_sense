@@ -6,4 +6,4 @@ Gasta : https://gasta-page.netlify.app/
 Trinidad : https://trinidad-page.netlify.app/
 Armedilla :
 Ilagan :
-Rosario :
+Rosario : https://rosarioangelica.netlify.app
