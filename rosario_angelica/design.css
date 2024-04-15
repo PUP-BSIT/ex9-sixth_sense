@@ -76,7 +76,7 @@ div {
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 426px) {
     .upper {
         display: grid;
         grid-template-columns: 1fr 1fr;
