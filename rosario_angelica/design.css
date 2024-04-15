@@ -2,9 +2,6 @@
     margin: 0 auto;
     max-width: 800px;
     padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
 }
 
 #header {
@@ -12,25 +9,31 @@
     color: white;
     text-align: center;
     padding: 20px 0;
-    width: 100%;
     box-shadow: 4px 5px 15px black;
 }
 
-#interest-hobbies, #works, #testimonials {
+#interest-hobbies, #myworks, #testimonials {
     background-color: #ffac81; 
     color: white;
-    padding: 20px;
-    width: calc(25% - 20px); 
+    padding: 10px;
     margin-bottom: 20px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 4px 5px 15px black;
+}
+
+.title {
+    background-color: #ffac81;
+    color: white;
     text-align: center;
     box-shadow: 4px 5px 15px black;
 }
 
 .gallery {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
     background-color: #ffac81;
     box-sizing: border-box;
     width: auto;
@@ -39,22 +42,20 @@
 }
 
 .ange {
+    width: calc(33.33% - 20px); /* Set width for each image container */
     margin: 10px;
     text-align: center;
 }
 
 .ange img {
-    width: 410px;
-    height: 360px;
+    width: 100%;
+    height: auto;
     border-radius: 20px;
     box-shadow: 4px 5px 15px black;
 }
 
-.title {
-    text-align: center;
-    background-color: #ffac81;
-    color: white;
-    box-shadow: 4px 5px 15px black;
+div {
+    border: 1px solid #ffac81;
 }
 
 
