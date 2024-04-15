@@ -84,11 +84,7 @@ li {
     margin: 10px;
 }
 
-
-
-
-
-  @media (max-width: 426px) {
+  @media screen and (max-width: 600px) {
     .message-container {
         display: flex;
         flex-direction: column;
@@ -123,8 +119,3 @@ li {
     }
 }
 
-@media screen and (max-width: 600px) {
-    .upper {
-      grid-template-columns: 1fr; /* Single column for smaller screens */
-    }
-  }
