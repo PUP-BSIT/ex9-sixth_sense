@@ -4,6 +4,6 @@ Group : https://sixthsense.netlify.app/
 Escuro : https://escuro-page.netlify.app/
 Gasta : https://gasta-page.netlify.app/
 Trinidad : https://trinidad-page.netlify.app/
-Armedilla :
+Armedilla : https://armedillapage.netlify.app
 Ilagan :
 Rosario : https://rosarioangelica.netlify.app
