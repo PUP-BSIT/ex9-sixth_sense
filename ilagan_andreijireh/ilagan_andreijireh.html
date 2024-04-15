@@ -71,36 +71,44 @@
       <img src="Eri.png" alt="Eri" />
     </div>
 
-    <div class="wrapper">  
-      <h2>Contact me</h2>   
-      <div class="item1">Email: 
-        <input type="text">
-      </div>     
-      <div class="item2">Full Name: 
-        <input type="text">
-      </div>     
-      <div class="item3">Age: 
-        <input type="text">
-      </div> 
-      <div class="item4">Subject: 
-        <input type="text">
-      </div>
-  </div>
+    <h2 class="title">Contact Me</h2>
+    <div class="form">
+      <form class="container">
+        <div class="upper">
+          <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" />
+          </div>
 
-  <label for="copy">Send me a copy</label> 
-  <input type="checkbox" name="copy" id="copybox" />
-  <br>
+          <div>
+            <label for="fullname">Fullname</label>
+            <input type="text" name="fullname" />
+          </div>
 
+          <div>
+            <label for="age">Age</label>
+            <input type="number" name="age" />
+          </div>
 
-  <label for="story">Message:</label>
-  <br>
-  <textarea id="texts" name="story" rows="20" cols="150"> 
-   </textarea>
+          <div>
+            <label for="subject">Subject</label>
+            <input type="text" name="subject" />
+          </div>
+        </div>
 
-      <div id="click">
-          <button type="button">Submit</button> 
-          <br>
-      </div>
+        <div class="checkbox-container">
+          <label for="sendme">Send me a copy</label>
+          <input type="checkbox" name="sendme" />
+        </div>
+
+        <div class="message-container">
+          <label for="message">Message</label>
+          <textarea name="message" cols="30" rows="10"></textarea>
+        </div>
+
+        <div class="submit-container">
+          <input type="submit" />
+        </div>
 
   </body>
 </html>
