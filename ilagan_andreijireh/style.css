@@ -98,12 +98,12 @@ li {
   .upper {
     display: grid;
     gap: 10px;
-    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    grid-template-columns: repeat(2, 1fr);
   }
   
   .upper > div:nth-child(1),
   .upper > div:nth-child(2) {
-    grid-column: span 1; /* Each div occupies one column */
+    grid-column: span 1;
   }
   
   label {
@@ -129,7 +129,7 @@ li {
   
   @media screen and (max-width: 600px) {
     .upper {
-      grid-template-columns: 1fr; /* Single column for smaller screens */
+      grid-template-columns: 1fr;
     }
   }
 
