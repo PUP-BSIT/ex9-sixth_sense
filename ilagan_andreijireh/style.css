@@ -84,38 +84,52 @@ li {
     margin: 10px;
 }
 
+.form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .container {
+    display: grid;
+    gap: 10px;
+  }
+  
+  .upper {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+  }
+  
+  .upper > div:nth-child(1),
+  .upper > div:nth-child(2) {
+    grid-column: span 1; /* Each div occupies one column */
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input,textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .checkbox-container {
+    display: flex;
+    align-items: baseline;
+  }
+  
+  .submit-container {
+    margin-top: 10px;
+  }
+  
   @media screen and (max-width: 600px) {
-    .message-container {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .submit-container {
-        display: flex;
-        justify-content: center;
-    }
-
-    .container {
-        display: flex;
-        flex-direction: column;
-    }
-}
-
-@media (min-width: 426px) {
     .upper {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
+      grid-template-columns: 1fr; /* Single column for smaller screens */
     }
-
-    .message-container {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .submit-container {
-        display: flex;
-        justify-content: center;
-    }
-}
+  }
 
