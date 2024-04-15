@@ -2,134 +2,117 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: lightpink ;
-}
-
-#header {
+    background-color: lightpink;
+  }
+  
+  #header {
     background-color: rgb(241, 180, 65);
     color: #fff;
     padding: 20px;
     text-align: center;
-}
-
-h1 {
+  }
+  
+  h1 {
     margin: 0;
     font-size: 45px; /* Increase font size for header */
-}
-
-hr {
+  }
+  
+  hr {
     border: none;
     border-top: 2px solid #fff;
     width: 50%;
     margin: auto;
     margin-top: 10px;
-}
-
-#interests {
+  }
+  
+  #interests {
     text-align: center;
     background-color: rgb(241, 180, 65);
     border: 5px solid rgb(247, 246, 246);
     margin-bottom: 20px;
-}
-
-#interests p {
-
+  }
+  
+  #interests p {
     color: white;
-
-}
-
-
-li {
+  }
+  
+  li {
     color: white;
     font-weight: bold;
     list-style-type: none;
     margin: 5px 0;
-}
-
-#work {
+  }
+  
+  #work {
     border: 5px solid rgb(247, 246, 246);
     padding: 20px;
     text-align: center;
     background-color: rgb(241, 180, 65);
     margin-bottom: 20px;
-}
-
-#testimonials {
+  }
+  
+  #testimonials {
     background-color: rgb(241, 180, 65);
     border: 5px solid rgb(247, 246, 246);
     padding: 20px;
     text-align: center;
     margin-bottom: 20px;
-}
-
-#testimonials h2 {
+  }
+  
+  #testimonials h2 {
     color: white;
     margin-bottom: 10px;
-}
-
-#testimonials p {
+  }
+  
+  #testimonials p {
     font-style: italic;
     color: white;
-}
-
-#gallery {
+  }
+  
+  #gallery {
     background-color: rgb(241, 180, 65);
     border: 5px solid rgb(247, 246, 246);
     padding: 20px;
     text-align: center;
-}
-
-#gallery img {
+  }
+  
+  #gallery img {
     width: 200px;
     margin: 10px;
-}
-
-.form {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
   }
   
-  .container {
-    display: grid;
-    gap: 10px;
+  @media (max-width: 426px) {
+    .message-container {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .submit-container {
+      display: flex;
+      justify-content: center;
+    }
+  
+    .container {
+      display: flex;
+      flex-direction: column;
+    }
   }
   
-  .upper {
-    display: grid;
-    gap: 10px;
-    grid-template-columns: repeat(2, 1fr);
-  }
-  
-  .upper > div:nth-child(1),
-  .upper > div:nth-child(2) {
-    grid-column: span 1;
-  }
-  
-  label {
-    font-weight: bold;
-  }
-  
-  input,textarea {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-  }
-  
-  .checkbox-container {
-    display: flex;
-    align-items: baseline;
-  }
-  
-  .submit-container {
-    margin-top: 10px;
-  }
-  
-  @media screen and (max-width: 600px) {
+  @media (min-width: 426px) {
     .upper {
-      grid-template-columns: 1fr;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+    }
+  
+    .message-container {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .submit-container {
+      display: flex;
+      justify-content: center;
     }
   }
 
