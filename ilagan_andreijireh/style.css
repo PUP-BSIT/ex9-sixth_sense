@@ -34,6 +34,11 @@ body {
     margin-left: 10px;
 }
 
+.container {
+  padding: 20px;
+  margin-left: 10px;
+}
+
 .message-container {
   padding: 20px;
   margin-left: 10px;
