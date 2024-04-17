@@ -113,7 +113,7 @@
   .upper {
     display: grid;
     gap: 10px;
-    grid-template-columns: 1fr; /* Single column layout by default */
+    grid-template-columns: 1fr; 
 }
   
   label {
@@ -132,6 +132,7 @@
   .checkbox-container {
     display: flex;
     align-items: center;
+    margin-right: 10px;
 }
   
   .submit-container {
@@ -140,13 +141,13 @@
   
   @media screen and (min-width: 600px) {
     .upper {
-      grid-template-columns: repeat(2, 1fr); /* Two columns for larger screens */
+      grid-template-columns: repeat(2, 1fr); 
     }
 }
   
   @media screen and (min-width: 320px) {
     .form {
-      padding: 10px; /* Adjust padding for smaller screens */
+      padding: 10px; 
     }
 }
   
