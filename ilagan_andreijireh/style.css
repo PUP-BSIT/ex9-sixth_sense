@@ -80,6 +80,12 @@ body {
     width: 200px;
     margin: 10px;
   }
+
+#upper {
+padding: 20px;
+margin-left: 6px;
+
+}
   
   @media (max-width: 426px) {
     .message-container {
