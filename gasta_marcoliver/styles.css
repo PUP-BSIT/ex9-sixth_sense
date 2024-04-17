@@ -20,7 +20,7 @@
 }
 
  #header {
-    background-image: url("db.jpg");
+   background-color: rgb(2, 0, 65);
     color: rgb(255,255,240);
     font-family: 'Gill Sans', 'Trebuchet MS', sans-serif;
     text-align: center;
@@ -99,34 +99,32 @@
     color: teal;
 }
 
-  /* New CSS Code */
-
  .form {
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
-  }
+}
   
  .container {
     display: grid;
     gap: 10px;
-  }
+}
   
  .upper {
     display: grid;
     gap: 10px;
-    grid-template-columns: repeat(2, 1fr); /* Two columns */
-  }
+    grid-template-columns: repeat(2, 1fr); 
+}
   
 .upper > div:nth-child(1),
 .upper > div:nth-child(2) {
-    grid-column: span 1; /* Each div occupies one column */
+    grid-column: span 1; 
 
-  }
+}
   
  label {
     font-weight: bold;
-  }
+}
   
  input,textarea {
     width: 100%;
@@ -134,19 +132,19 @@
     border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box;
-  }
+}
   
  .checkbox-container {
     display: flex;
     align-items: baseline;
-  }
+}
   
   .submit-container {
     margin-top: 10px;
-  }
+}
   
   @media screen and (max-width: 600px) {
     .upper {
-      grid-template-columns: 1fr; /* Single column for smaller screens */
+      grid-template-columns: 1fr;
     }
-  }
+}
