@@ -29,6 +29,11 @@ body {
     padding-left: 0;
   }
 
+.upper{
+    padding: 20px;
+    margin-left: 10px;
+}
+
   #interests {
     text-align: center;
     background-color: rgb(241, 180, 65);
