@@ -99,34 +99,29 @@
     color: teal;
 }
 
- .form {
+.form {
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
 }
   
- .container {
+  .container {
     display: grid;
     gap: 10px;
 }
   
- .upper {
+  .upper {
     display: grid;
     gap: 10px;
-    grid-template-columns: repeat(2, 1fr); 
+    grid-template-columns: 1fr; /* Single column layout by default */
 }
   
-.upper > div:nth-child(1),
-.upper > div:nth-child(2) {
-    grid-column: span 1; 
-
-}
-  
- label {
+  label {
     font-weight: bold;
 }
   
- input,textarea {
+  input,
+  textarea {
     width: 100%;
     padding: 8px;
     border: 1px solid #ccc;
@@ -134,17 +129,24 @@
     box-sizing: border-box;
 }
   
- .checkbox-container {
+  .checkbox-container {
     display: flex;
-    align-items: baseline;
+    align-items: center;
 }
   
   .submit-container {
     margin-top: 10px;
 }
   
-  @media screen and (max-width: 600px) {
+  @media screen and (min-width: 600px) {
     .upper {
-      grid-template-columns: 1fr;
+      grid-template-columns: repeat(2, 1fr); /* Two columns for larger screens */
     }
 }
+  
+  @media screen and (min-width: 320px) {
+    .form {
+      padding: 10px; /* Adjust padding for smaller screens */
+    }
+}
+  
