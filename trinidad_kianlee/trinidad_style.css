@@ -70,53 +70,48 @@ li {
 .title {
   color: #ffffff;
   text-align: center;
+  border: 5px solid #ffffff;
 }
 
 .gallery {
-  background-color: #242333;
   display: flex;
-  margin: 1rem;
-  box-sizing: border-box;
-}
-
-.gallery img {
-  width: 100px;
-  height: 100px;
-  color: #ffffff;
-}
-
-.gallery:hover {
-  border: 1px #ffffff;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .image-box {
-  margin: 0 1%;
-  flex-grow: 1;
-  flex-basis: 0;
-  transition: 0.5s;
+  width: calc(50% - 20px);
+  margin: 10px;
 }
 
 .image-box img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: 0.5s;
 }
 
-.image-box:hover {
-  flex-basis: 10%;
+@media (max-width: 420px) {
+  .image-box {
+    width: calc(100% - 20px);
+  }
 }
 
-.active {
-  flex-basis: 10%;
+@media (min-width: 421px) and (max-width: 726px) {
+  .image-box {
+    width: calc(50% - 20px);
+  }
 }
 
-.gallery:hover .active {
-  flex-basis: 0;
+@media (min-width: 727px) and (max-width: 1200px) {
+  .image-box {
+    width: calc(33.33% - 20px);
+  }
 }
 
-.image-box:nth-child(1):hover {
-  flex-basis: 10%;
+@media (min-width: 1201px) {
+  .image-box {
+    width: calc(25% - 20px);
+  }
 }
 
 @media (max-width: 426px) {
