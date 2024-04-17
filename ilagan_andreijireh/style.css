@@ -29,8 +29,6 @@ body {
     padding-left: 0;
   }
 
-  
-  
   #interests {
     text-align: center;
     background-color: rgb(241, 180, 65);
@@ -112,6 +110,8 @@ body {
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr;
+      padding: 20px;
+      margin-left: 10px;
     }
   
     .message-container {
