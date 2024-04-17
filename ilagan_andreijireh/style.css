@@ -17,7 +17,7 @@ body {
     font-size: 45px; /* Increase font size for header */
   }
 
-.h2 {
+  h2 {
   padding: 20px;
    margin-left: 10px;
 }
