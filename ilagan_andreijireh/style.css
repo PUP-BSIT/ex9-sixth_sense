@@ -24,6 +24,12 @@ body {
     margin: auto;
     margin-top: 10px;
   }
+
+  ul {
+    padding-left: 0;
+  }
+
+  
   
   #interests {
     text-align: center;
@@ -81,12 +87,7 @@ body {
     margin: 10px;
   }
 
-#upper {
-padding: 20px;
-margin-left: 6px;
 
-}
-  
   @media (max-width: 426px) {
     .message-container {
       display: flex;
@@ -101,6 +102,8 @@ margin-left: 6px;
     .container {
       display: flex;
       flex-direction: column;
+      padding: 20px;
+      margin-left: 10px;
     }
   }
   
