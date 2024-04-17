@@ -16,6 +16,12 @@ body {
     margin: 0;
     font-size: 45px; /* Increase font size for header */
   }
+
+.h2 {
+  padding: 20px;
+   margin-left: 10px;
+}
+
   
   hr {
     border: none;
