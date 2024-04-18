@@ -1,78 +1,98 @@
-
-body {
-    background-color: lightpink;
-}
-
 .container {
     margin: 0 auto;
     max-width: 800px;
     padding: 20px;
-    background-color: lightseagreen;
 }
 
 #header {
-    background-color: lightgreen; 
+    background-color: #A8DF8E; 
     color: black;
     text-align: center;
-    padding: 20px 0;
-    box-shadow: 4px 5px 15px brown;
+    padding: 10px 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-style: solid;
+    border-color: #FFE5E5;
+    font-size: 15px;
 }
 
-#interest_hobbies, #works, #testimonials {
-    background-color: lightskyblue; 
+#interest_hobbies {
+    background-color: #FFE5E5; 
     color: black;
     padding: 30px;
     margin-bottom: 20px;
     text-align: center;
-    box-shadow: 4px 5px 15px black;
+    border-radius: 25px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#works {
+    background-color: #FFBFBF; 
+    color: black;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#testimonials {
+    background-color: #FFE5E5; 
+    color: black;
+    padding: 15px;
+    margin-bottom: 10px;
+    text-align: center;
+    border-radius: 25px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
 }
 
 .title {
-    background-color: lightgreen;
+    background-color: #A8DF8E;
     color: black;
     text-align: center;
-    box-shadow: 4px 5px 15px brown;
-}
-
-.gallery img {
-    width: 100px;
-    height: 100px;
-}
-
-.sam {
-    width: calc(33.33% - 20px); 
-    margin: 10px;
-    text-align: center;
-
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .gallery {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
+    background-color: #FFBFBF;
+    box-sizing: border-box; 
+    width: 100%; 
+    padding: 20px; 
+}
+
+.sam {
+    width: calc(33.33% - 40px);
+    margin: 10px;
     text-align: center;
-    margin: 1rem;
-    background-color: rgb(255, 213, 219);
-    box-sizing: border-box;
-    width: auto;
-    box-shadow: 4px 5px 15px brown;
 }
 
 .sam img {
-    width: 100px;
-    height: auto;
-    object-fit: 20px;
-    box-shadow: 4px 5px 15px brown;
-} 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    border-radius: 20px;
+    box-shadow: 4px 5px 15px #1A5D1A;
+}
+
 
 .side {
-    border: 1px solid rgb(12, 167, 89);
+    border: 3px solid #FFBFBF;
+}
+
+input {
+    color: black;
+}
+
+#contact {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
 }
 
 @media (max-width: 426px) {
-
     .message-container {
         display: flex;
         flex-direction: column;
@@ -92,7 +112,7 @@ body {
 @media (min-width: 426px) {
     .upper {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 3fr 3fr;
         grid-template-rows: 1fr;
     }
 
@@ -104,12 +124,10 @@ body {
     .submit-container {
         display: flex;
         justify-content: center;
-        margin: auto;
     }
 
-    .myDiv{
+    .my_Div {
         display: block;
-                    margin: auto;
-        }
+        margin: auto;
+    }
 }
-
